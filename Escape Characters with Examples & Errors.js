@@ -29,6 +29,15 @@ console.log("Helloo\b");
 // Output:
 // Hello
 
+// ✅ Correct Example 7: \r = Carriage Return
+console.log("12345\rAB");
+// Output (in most environments):
+// AB345
+
+// ✅ Correct Example 8: \f = Form Feed
+console.log("Hello\fWorld");
+// Output: May not be visible clearly (used in old printers)
+
 // ❌ Error Example 1: Using single backslash by mistake
 // console.log("C:\Users\Haroon"); 
 // ❌ Error:
