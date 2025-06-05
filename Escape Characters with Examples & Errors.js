@@ -4,6 +4,14 @@ console.log("Hello\nWorld");
 // Hello
 // World
 
+
+
+// alert("Happy Coding!\n\u2610 You agreed");
+// alert("Happy Coding!\n\u2611 You agreed");
+
+
+
+
 // ✅ Correct Example 2: \t = Tab Space
 console.log("Name:\tHaroon");
 // Output:
