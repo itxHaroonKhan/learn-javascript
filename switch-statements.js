@@ -1,3 +1,63 @@
+
+// ✅ 39. How to start a switch statement
+// You start a switch statement by:
+
+// Writing switch(expression)
+
+// Opening curly braces {
+
+// Using case keywords to define conditions
+
+
+let fruit = "apple";
+
+switch (fruit) {
+  case "apple":
+    console.log("This is an apple");
+    break;
+}
+
+
+// ✅ 40. How to complete a switch statement
+// You complete a switch statement by:
+
+// Adding multiple case options
+
+// Using break after each case to stop further checking
+
+// Optionally adding a default case at the end
+
+// Closing the curly brace }
+
+
+let fruit = "banana";
+
+switch (fruit) {
+  case "apple":
+    console.log("This is an apple");
+    break;
+
+  case "banana":
+    console.log("This is a banana");
+    break;
+
+  case "orange":
+    console.log("This is an orange");
+    break;
+
+  default:
+    console.log("Unknown fruit");
+}
+
+
+
+
+
+
+
+
+
+
 // =======================================
 // ✅ SWITCH STATEMENTS PRACTICE FILE
 // =======================================
