@@ -32,7 +32,26 @@ do {
 
 
 
+// For loop of Aarry 
+let a = ["apple", "banana", "cherry", "date", "elderberry"];
 
+for(let i of a){
+    console.log(i);
+}
+
+
+
+// for in for string 
+
+
+
+let a = "Haroon Rasheed"
+
+for(let i in a){
+    console.log(a[i]);
+
+
+}
 
 
 
