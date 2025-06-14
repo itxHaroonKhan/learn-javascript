@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Events Examples</title>
+</head>
+<body>
+
+  <h1>📘 JavaScript Events Examples</h1>
+
+  <!-- 🔗 Link Example -->
+  <h2>1️⃣ Link par click hone ka event</h2>
+  <a href="#" id="linkExample">Mujhe Click Karo (Link)</a>
+
+  <!-- 🔘 Button Example -->
+  <h2>2️⃣ Button par click hone ka event</h2>
+  <button id="buttonExample">Mujhe Click Karo (Button)</button>
+
+  <!-- JavaScript Events -->
+  <script>
+    // ✅ Example 1: Link par click hone par alert show karna
+    document.getElementById("linkExample").addEventListener("click", function(event) {
+      event.preventDefault(); // link ka default kaam (page change) roka gaya
+      alert("✅ Aap ne LINK par click kiya!");
+    });
+
+    // ✅ Example 2: Button click hone par alert show karna
+    document.getElementById("buttonExample").addEventListener("click", function() {
+      alert("✅ Aap ne BUTTON par click kiya!");
+    });
+  </script>
+
+</body>
+</html>
