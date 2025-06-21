@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -29,6 +29,75 @@
       alert("✅ Aap ne BUTTON par click kiya!");
     });
   </script>
+
+</body>
+</html>
+
+
+
+
+
+ -->
+
+
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Events Fields Example with CSS</title>
+  <style>
+    /* Input field style */
+    #nameField {
+      padding: 10px;
+      border: 2px solid gray;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 250px;
+    }
+
+    /* Input field jab focus ho */
+    #nameField:focus {
+      border-color: blue;
+      outline: none;
+      background-color: #f0f8ff;
+    }
+
+    /* Message style */
+    #message {
+      margin-top: 10px;
+      font-family: Arial, sans-serif;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<input type="text" id="nameField" placeholder="Apna naam likhein">
+
+<p id="message"></p>
+
+<script>
+  const nameField = document.getElementById("nameField");
+  const message = document.getElementById("message");
+
+  nameField.addEventListener("focus", function() {
+    message.textContent = "Aap field me type kar rahe hain...";
+  });
+
+  nameField.addEventListener("blur", function() {
+    message.textContent = "Aap field se bahar aa gaye hain.";
+  });
+
+  nameField.addEventListener("change", function() {
+    message.textContent = "Aap ne value change kar di hai: " + nameField.value;
+  });
+
+  nameField.addEventListener("input", function() {
+    message.textContent = "Current value: " + nameField.value;
+  });
+</script>
 
 </body>
 </html>
