@@ -101,3 +101,112 @@
 
 </body>
 </html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="box">
+  Click 😁
+</div>
+
+<script>
+const mybox = document.getElementById('box');
+
+mybox.addEventListener('click', function(e) {
+  e.target.style.backgroundColor = '#f0f0f0';
+  e.target.textContent = 'Clicked! 😂';
+});
+mybox.addEventListener('mouseover', function(e) {
+  e.target.style.backgroundColor = '#e0e0e0';
+  e.target.textContent = 'Mouse Over! 🐭'
+});
+</script>;
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    #box:hover {
+      background-color: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <!-- 1  onclick="changeColor()  click -->
+   <!-- 2 oncontextmenu="changeColor()"  Raight Click -->
+   <!-- 3 ondblclick="changeColor()" Double Click -->
+    <!-- onmousedown="changeColor() Mouse Down -->
+     <!-- onmouseup="changeColor()" Mouse Up -->
+      <!-- onmouseover="changeColor()" jse mouse Over karne par click karne par color change hoga -->
+
+      <!-- onmouseout="changeColor()" Mouse Out box se bahar nikalne par click karne par color change hoga -->
+
+
+
+  <div id="box" onmouseout="changeColor()">
+    <h1 style="color: white; text-align: center; padding-top: 80px;">Click Me</h1>
+
+  </div>
+
+  <script>
+
+
+    function changeColor() {
+      alert("You clicked the box!");
+
+    }
+
+  </script>
+</body>
+</html>
+
+
