@@ -32,3 +32,66 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image aur Text Manipulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<img src="https://i.pinimg.com/736x/4b/c8/a1/4bc8a1873b16f428b6c209a09bdd9165.jpg" alt="" id="image" class="image1" onclick="changeImage()">
+
+
+
+<script>
+  function changeImage(){
+    let img = document.getElementById("image");
+
+    if(img.src === "https://i.pinimg.com/736x/d4/7d/ed/d47ded45213710012f9af45e100599b4.jpg") {
+       // If the image is the second one, change it to the first one
+      img.src = "https://i.pinimg.com/736x/4b/c8/a1/4bc8a1873b16f428b6c209a09bdd9165.jpg";
+       img.classList.remove("image2");
+       img.classList.add("image1");
+    } else {
+      img.src = "https://i.pinimg.com/736x/d4/7d/ed/d47ded45213710012f9af45e100599b4.jpg";
+      img.classList.remove("image1");
+      img.classList.add("image2");
+
+    }
+  }
+</script>
+  
+
+
+
+  
+   
+
+
+
+
+ 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
