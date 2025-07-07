@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Target by Tag</title>
+</head>
+<body>
+
+  <p>This is first paragraph.</p>
+  <p>This is second paragraph.</p>
+  <p>This is third paragraph.</p>
+
+  <button onclick="styleAllP()">Style All Paragraphs</button>
+
+  <script>
+        function styleAllP() {
+      // Saare <p> elements ko target karo
+      const allParagraphs = document.getElementsByTagName("p");
+
+      // Loop ke through sab ke styles change karo
+      for (let i = 0; i < allParagraphs.length; i++) {
+        allParagraphs[i].style.color = "blue";
+        allParagraphs[i].style.fontSize = "20px";
+        allParagraphs[i].style.fontWeight = "bold";
+      }
+    }
+  </script>
+
+</body>
+</html>
