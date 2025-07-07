@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Style</title>
+</head>
+<body>
+
+  <!-- Pehla paragraph: load hote hi style lage -->
+  <p id="autoText">This is HTML</p>
+
+  <!-- Dusra paragraph: button click par style lage -->
+  <p id="clickText">This is HTML and JS</p>
+  <button onclick="myfun()">Click to Change Style</button>
+
+  <script>
+    // Page load hone par style lagaye
+    function fun() {
+      document.getElementById("autoText").style.color = "red";
+      document.getElementById("autoText").style.fontSize = "30px";
+      document.getElementById("autoText").style.fontWeight = "bold";
+      document.getElementById("autoText").style.backgroundColor = "yellow";
+    }
+
+    // Button click par style lagaye
+    function myfun() {
+      document.getElementById("clickText").style.color = "blue";
+      document.getElementById("clickText").style.fontSize = "30px";
+      document.getElementById("clickText").style.fontWeight = "bold";
+    }
+
+    // Call function jab page load ho
+    window.onload = fun;
+  </script>
+
+</body>
+</html>
