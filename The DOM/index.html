@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Parents & Children</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .box { border: 2px solid #333; padding: 10px; margin-bottom: 20px; }
+    button { padding: 8px 12px; margin-right: 10px; }
+    #output { background: #f0f0f0; padding: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+
+
+
+  
+   <h1>The DOM</h1>
+<p id="para">this is for you</p>
+<button onclick="change()">change text</button>
+
+<script>
+  function change() {
+    document.getElementById("para").innerHTML = "this is changed text";
+  }
+</script>
+
+
+   
+
+
+
+
+
+
+
+  <h2>🌳 DOM: Parent aur Children</h2>
+
+  <!-- Parent div -->
+  <div id="parentBox" class="box">
+    <h3>Yeh Parent Hai</h3>
+    <p>Yeh pehla child hai</p>
+    <p>Yeh dusra child hai</p>
+  </div>
+
+  <!-- Buttons -->
+  <button onclick="showChildren()">👶 Children dekho</button>
+  <button onclick="showParent()">👨‍👦 Parent dekho</button>
+
+  <!-- Output box -->
+  <div id="output">Yahan result nazar aayega</div>
+
+  <script>
+    function showChildren() {
+      const parent = document.getElementById("parentBox");
+      const children = parent.children;
+
+      let text = `👨‍👧 Parent ka ID: <b>${parent.id}</b><br>`;
+      text += `Total Children: <b>${children.length}</b><br><br>`;
+
+      for (let i = 0; i < children.length; i++) {
+        text += `Child ${i + 1}: ${children[i].tagName} → "${children[i].textContent}"<br>`;
+      }
+
+      document.getElementById("output").innerHTML = text;
+    }
+
+    function showParent() {
+      const child = document.querySelector("#parentBox p");
+      const parent = child.parentElement;
+
+      let text = `👶 Child ka Text: <b>${child.textContent}</b><br>`;
+      text += `Uska Parent Tag: <b>${parent.tagName}</b><br>`;
+      text += `Parent ka ID: <b>${parent.id}</b>`;
+
+      document.getElementById("output").innerHTML = text;
+    }
+  </script>
+
+</body>
+</html>
