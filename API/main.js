@@ -12,7 +12,7 @@ async function getWeather() {
 
   try {
 
-    let res = await fetch(`https://api.weatherapi.com/v1/current.json?key=a997bd490f3f4451af474913251307&q=${city}&aqi=yes`);
+    let res = await fetch(`https://api.weatherap.com/v1/current.json?key=a997bd490f3f4451af474913251307&q=${city}&aqi=yes`);
     let data = await res.json();
 
     if (data.error) {
