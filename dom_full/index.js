@@ -55,6 +55,49 @@ elem.remove()
 
 
 
+let p = document.createElement("p");
+
+p.innerHTML = "Hell Sir Who are You ?"
+p.style.background = "red"
+p.style.padding = "20px"
+
+let body = document.querySelector("body");
+body.append(p)
+
+
+
+let but = document.createElement("button");
+but.innerHTML = "Click me"
+but.style.padding = "5px"
+but.style.margin = "20px"
+but.style.background = "green"
+but.style.color = "white"
+p.prepend(but)
+
+
+
+
+let css = document.querySelector("div")
+// css.setAttribute('style','background-color:red')
+// css.setAttribute('class','apply')
+
+// css.style.background="red"
+// css.style.cssText = "background-color:red; font-size:60px;"
+
+
+
+
+// css.classList.add("name")
+// css.classList.add('xyz')
+// css.classList.remove('xyz')
+// console.log(css);
+
+// let isyas = css.classList.contains('name');
+// console.log(isyas);
+
+
+
+
 
 
 
