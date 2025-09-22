@@ -1,3 +1,26 @@
+// Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.  Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Author: Haroon Rasheed
 // Date: 21-09-2025
 // This program stores names of friends in an array and prints each one.
@@ -56,16 +79,21 @@ for (let i = 0; i < transportation.length; i++) {
 // Date: 21-09-2025
 // This program replaces one guest who can't come and sends new invitations.
 
+// Author: Haroon Rasheed
+// Date: 21-09-2025
+// This program updates the guest list when one guest can't make it.
+
 let guests: string[] = ["Quaid-e-Azam", "Allama Iqbal", "Albert Einstein"];
 
 // Guest who can't make it
-let cannotAttend: string = guests[2];
-console.log(cannotAttend + " can't make it to the dinner.");
+let unableToAttend: string = guests[2];
+console.log(unableToAttend + " can’t make it to the dinner.");
 
-// Replace with a new guest
+// Replace the guest with a new one
 guests[2] = "Isaac Newton";
 
-// Send new invitations
+// Print new invitations
 for (let i = 0; i < guests.length; i++) {
-    console.log("Dear " + guests[i] + ", you are still invited to dinner at my place.");
+    console.log("Dear " + guests[i] + ", you are cordially invited to dinner at my place.");
 }
+
