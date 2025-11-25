@@ -2,6 +2,11 @@
 
 
 
+
+// **3. Loops (10 Questions)**
+// **21.** Write a for loop to print numbers from 1 to 50.
+// **22.** Use a while loop to sum the numbers from 1 to 10.
+// **23.** Create a for…of loop to log each character of the string.
 // **24.** Write a loop that prints all even numbers between 1 and 100.
 // **25.** Create a program that reverses a string using a loop.
 // **26.** Write a loop to find the largest number in an array.
@@ -428,6 +433,7 @@ console.error("Something went wrong!");
 
 // 7. Log the square of the number 12
 console.log(12 * 12);
+
 
 
 
